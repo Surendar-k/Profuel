@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((err) => console.error("Error fetching products:", err));
 });
 document.getElementById("navbar").innerHTML = `
-    <a href="./index.html">Home</a>
-    <a href="./service.html">Services</a>
-    <a href="./about.html">About</a>
-    <a href="./contact.html">Contact</a>
+    <a href="/index.html">Home</a>
+    <a href="/frontend/service.html">Services</a>
+    <a href="/frontend/about.html">About US</a>
+    <a href="/frontend/contact.html">Contact</a>
 `;
 document.getElementById("footer").innerHTML = `
     <p>&copy; 2025 My Website. All rights reserved.</p>
