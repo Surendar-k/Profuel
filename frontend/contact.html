@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Protein Foods for Every Person</title>
+    <link rel="stylesheet" href="./css/constactstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add CSS for icon sizes and spacing */
+      .social-icon img {
+        width: 40px; /* Size of the icons */
+        height: 40px; /* Ensure square icons */
+        border-radius: 50%; /* Optional: Makes icons circular */
+        margin: 0 10px; /* Spacing between icons */
+        transition: transform 0.3s; /* Smooth hover effect */
+      }
+
+      .social-icon img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar-container">
+      <div id="website-name">Profuel</div>
+      <div id="navbar"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="contact-hero">
+      <h1>Get in Touch</h1>
+      <p>
+        We'd love to hear from you! Reach out to us through the form below or
+        connect through our social media channels.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-us">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or need further information, feel free to
+          reach out to us!
+        </p>
+
+        <!-- Contact Form -->
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <!-- Contact Information Links -->
+        <div class="contact-info">
+          <h2>Alternatively, connect with us on:</h2>
+          <div class="social-links">
+            <!-- Email Icon -->
+            <a href="mailto:info@profuel.com" class="social-icon" title="Email">
+              <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email" />
+            </a>
+
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/1234567890" class="social-icon" title="WhatsApp">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" />
+            </a>
+
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/profueleats" class="social-icon" title="Instagram">
+              <img src="https://img.freepik.com/premium-vector/instagram-logo-vector-illustration_1300495-24.jpg?semt=ais_hybrid" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-container">
+      <div id="footer">
+        <p>&copy; 2025 Profuel. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

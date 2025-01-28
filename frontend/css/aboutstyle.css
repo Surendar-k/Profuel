@@ -1,0 +1,269 @@
+/* General Body Styling with smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navbar Styles */
+#navbar-container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  #navbar-container #website-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 40px;
+  }
+  
+  #navbar {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.2s ease-in-out;
+  }
+  
+  #navbar a:hover {
+    color: #ff6f61;
+    transform: translateY(-3px);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+/* About Us Section with side-by-side layout */
+#about-us-page {
+    background-color: #fff;
+    padding: 12px 20px 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-us-page h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    gap: 60px;
+    animation: fadeIn 1s ease-out;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: slideInLeft 1s ease-out;
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+}
+
+.about-text {
+    flex: 1;
+    animation: slideInRight 1s ease-out;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* How We Work Section with animations */
+#how-we-work {
+    background-color: #f4f4f4;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #fff;
+    padding: 40px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.step:hover img {
+    transform: scale(1.05);
+}
+
+/* Brand Ambassador Section with animations */
+#brand-ambassador {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.ambassador-card {
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: slideInUp 0.8s ease-out;
+}
+
+.ambassador-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ambassador-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image {
+        max-width: 80%;
+    }
+    
+    .about-text {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar-container {
+        padding: 15px 20px;
+    }
+    
+    #navbar {
+        gap: 15px;
+    }
+    
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .step {
+        width: 90%;
+        max-width: 350px;
+    }
+}

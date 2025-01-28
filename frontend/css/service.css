@@ -1,0 +1,231 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;  /* Lighter background color for a cleaner look */
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar Styles */
+  #navbar-container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  #navbar-container #website-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 40px;
+  }
+  
+  #navbar {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.2s ease-in-out;
+  }
+  
+  #navbar a:hover {
+    color: #ff6f61;
+    transform: translateY(-3px);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hero Section */
+  #services-hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: url('https://plantigo.in/cdn/shop/articles/Untitled_1400_x_532_px_5.png?v=1723530813&width=2048') no-repeat center center/cover;  /* Full-width background image */
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  #services-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  #services-hero p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 5rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    animation: fadeInScale 1.2s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  #services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 1.2s ease forwards;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Call to Action Section */
+  #cta-section {
+    background-color: #ff6f61;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  #cta-section p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+  #cta-section button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #cta-section button:hover {
+    background-color: #27f418;
+  }
+  
+  /* Footer Section */
+  #footer-container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #footer-container p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

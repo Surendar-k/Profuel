@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+#navbar-container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+}
+
+#navbar-container #website-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 40px;
+}
+
+#navbar {
+    display: flex;
+    gap: 30px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, transform 0.2s ease-in-out;
+}
+
+#navbar a:hover {
+    color: #ff6f61;
+    transform: translateY(-3px);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+#contact-hero {
+    background-color: #388e3c; /* Green for health & protein */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('hero-bg.jpg'); /* Add protein-related image */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid #ff6f61; /* Accent color */
+}
+
+#contact-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#contact-hero p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+#contact-us {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('protein-bg.jpg'); /* Protein-related image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #388e3c; /* Green for health & protein */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #388e3c;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button.submit-btn {
+    background-color: #388e3c;
+    color: white;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Contact Information */
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Social Icon Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between icons */
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 60px; /* Icon size */
+    height: 60px; /* Icon size */
+     /* White background for contrast */
+    border-radius: 50%;
+    padding: 20px;
+    
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth animation */
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    
+}
+
+.social-icon img {
+    width: 60px;
+    height: 60px ;/* Adjust size of icon image */
+    border-radius: 0px; /* Make icons circular */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Slight zoom effect for images on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column; /* Stack icons vertically on small screens */
+        gap: 20px; /* Spacing between icons */
+    }
+}
+
+/* Footer */
+#footer-container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
