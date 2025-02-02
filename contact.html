@@ -28,7 +28,12 @@
     <!-- Navbar -->
     <header id="navbar-container">
       <div id="website-name">Profuel</div>
-      <div id="navbar"></div>
+      <div id="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./service.html">Service</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+      </div>
     </header>
 
     <!-- Hero Section -->
@@ -50,7 +55,7 @@
         </p>
 
         <!-- Contact Form -->
-        <form action="#" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
           <div class="form-group">
             <label for="name">Full Name:</label>
             <input
@@ -61,7 +66,7 @@
               required
             />
           </div>
-
+          <input type="hidden" name="access_key" value="37289f58-e028-4bdc-a931-721061464b6d">
           <div class="form-group">
             <label for="email">Email Address:</label>
             <input
@@ -72,7 +77,7 @@
               required
             />
           </div>
-
+       
           <div class="form-group">
             <label for="message">Message:</label>
             <textarea
@@ -91,18 +96,39 @@
           <h2>Alternatively, connect with us on:</h2>
           <div class="social-links">
             <!-- Email Icon -->
-            <a href="mailto:info@profuel.com" class="social-icon" title="Email">
-              <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email" />
+            <a
+              href="mailto:surendarkumar2k@gmail.com"
+              class="social-icon"
+              title="Email"
+            >
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                alt="Email"
+              />
             </a>
 
             <!-- WhatsApp Icon -->
-            <a href="https://wa.me/1234567890" class="social-icon" title="WhatsApp">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" />
+            <a
+              href="https://wa.me/1234567890"
+              class="social-icon"
+              title="WhatsApp"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                alt="WhatsApp"
+              />
             </a>
 
             <!-- Instagram Icon -->
-            <a href="https://www.instagram.com/profueleats" class="social-icon" title="Instagram">
-              <img src="https://img.freepik.com/premium-vector/instagram-logo-vector-illustration_1300495-24.jpg?semt=ais_hybrid" alt="Instagram" />
+            <a
+              href="https://www.instagram.com/profueleats"
+              class="social-icon"
+              title="Instagram"
+            >
+              <img
+                src="https://img.freepik.com/premium-vector/instagram-logo-vector-illustration_1300495-24.jpg?semt=ais_hybrid"
+                alt="Instagram"
+              />
             </a>
           </div>
         </div>
